@@ -1,14 +1,22 @@
 <!doctype html>
-<html lang="Pt-br">
+<html lang="pt-br">
     <head>
-        <link rel="stylesheet" href="CSS/styles.css" />
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Linha de Frente</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
+
+        <link rel="icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
+
     <body>
-        <header class="inicio">
-            <nav>
+        <header class="hero">
+            <nav class="nav">
+                <span class="brand">Linha de Frente</span>
                 <ul class="menu">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Notícias</a></li>
@@ -17,86 +25,228 @@
                 </ul>
             </nav>
 
-            <div class="banner">
-                <!-- CARROSSEL -->
-                <div class="carousel">
-                    <img src="images/banner1.webp" class="slide" />
-                    <img src="images/banner2.webp" class="slide" />
-                    <img src="images/banner3.webp" class="slide" />
-                </div>
-
-                <!-- OVERLAY -->
+            <div class="hero-bg">
+                <img src="images/banner1.webp" />
+                <img src="images/banner2.webp" />
+                <img src="images/banner3.webp" />
                 <div class="overlay"></div>
+            </div>
 
-                <!-- CONTEÚDO -->
-                <div class="conteudo-banner">
-                    <img src="images/logo.png" id="incio-imagem" />
-                    <h1 id="Text-base">Bem-vindo à Linha de Frente</h1>
-                    <p id="paragrafo-base">
-                        O site especializado em notícias e acontecimentos
-                        esportivos
-                    </p>
-                </div>
+            <div class="hero-content">
+                <img src="images/logo.png" alt="Linha de Frente" />
+                <h1>Linha de Frente</h1>
+                <p>Notícias e acontecimentos esportivos em tempo real</p>
             </div>
         </header>
 
-        <main class="meio">
-            <div class="conteudo-banner">
-                <h1 id="titulo-base">Bem-vindo à Linha de Frente</h1>
-                <h2 id="subtitulo-base">
-                    Explore as últimas notícias esportivas
-                </h2>
-            </div>
-            <section class="noticias">
-                <header class="noticias-header">
-                    <h2>Últimas Notícias</h2>
-                    <span class="linha"></span>
+        <main class="container">
+            <section class="section-header">
+                <h2>Últimas Notícias</h2>
+                <span></span>
+            </section>
+
+            <section class="news">
+                <article class="card">
+                    <img src="images/banner1.webp" />
+                    <div class="card-body">
+                        <h3>Título da Notícia</h3>
+                        <p>
+                            Resumo curto e direto para chamar atenção do leitor.
+                        </p>
+                        <a href="#">Ler mais →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/banner2.webp" />
+                    <div class="card-body">
+                        <h3>Título da Notícia</h3>
+                        <p>
+                            Resumo curto e direto para chamar atenção do leitor.
+                        </p>
+                        <a href="#">Ler mais →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/banner3.webp" />
+                    <div class="card-body">
+                        <h3>Título da Notícia</h3>
+                        <p>
+                            Resumo curto e direto para chamar atenção do leitor.
+                        </p>
+                        <a href="#">Ler mais →</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="events">
+                <header class="section-header">
+                    <h2>Eventos em Destaque</h2>
+                    <span></span>
                 </header>
 
-                <div class="noticias-grid">
-                    <article class="noticia">
-                        <div class="noticia-imagem">
-                            <img src="images/banner1.webp" alt="Notícia 2" />
-                        </div>
-                        <div class="noticia-conteudo">
-                            <h3>Título da Notícia</h3>
+                <div class="events-grid">
+                    <article class="event-card featured">
+                        <img
+                            src="images/banner4.webp"
+                            alt="Evento em destaque"
+                        />
+                        <div class="event-content">
+                            <h3>Grande Evento Esportivo</h3>
                             <p>
-                                Texto resumido da notícia, chamando atenção do
-                                leitor para continuar a leitura.
+                                O principal evento da temporada, reunindo
+                                atletas, competições decisivas e muita emoção.
                             </p>
-                            <a href="#">Ler mais</a>
+                            <a href="#">Ver detalhes →</a>
                         </div>
                     </article>
 
-                    <article class="noticia">
-                        <div class="noticia-imagem">
-                            <img src="images/noticia2.webp" alt="Notícia 2" />
-                        </div>
-                        <div class="noticia-conteudo">
-                            <h3>Título da Notícia</h3>
-                            <p>
-                                Texto resumido da notícia, chamando atenção do
-                                leitor para continuar a leitura.
-                            </p>
-                            <a href="#">Ler mais</a>
+                    <article class="event-card">
+                        <img src="images/banner5.webp" />
+                        <div class="event-content">
+                            <h3>Título do Evento</h3>
+                            <p>Descrição curta e objetiva do evento.</p>
+                            <a href="#">Ver detalhes →</a>
                         </div>
                     </article>
 
-                    <article class="noticia">
-                        <div class="noticia-imagem">
-                            <img src="images/noticia3.webp" alt="Notícia 3" />
+                    <article class="event-card">
+                        <img src="images/banner6.webp" />
+                        <div class="event-content">
+                            <h3>Título do Evento</h3>
+                            <p>Descrição curta e objetiva do evento.</p>
+                            <a href="#">Ver detalhes →</a>
                         </div>
-                        <div class="noticia-conteudo">
-                            <h3>Título da Notícia</h3>
-                            <p>
-                                Texto resumido da notícia, chamando atenção do
-                                leitor para continuar a leitura.
-                            </p>
-                            <a href="#">Ler mais</a>
+                    </article>
+
+                    <article class="event-card">
+                        <img src="images/banner7.webp" />
+                        <div class="event-content">
+                            <h3>Título do Evento</h3>
+                            <p>Descrição curta e objetiva do evento.</p>
+                            <a href="#">Ver detalhes →</a>
                         </div>
                     </article>
                 </div>
             </section>
+            <section class="tabelas">
+                <header class="section-header">
+                    <h2>Tabelas & Rankings</h2>
+                    <span></span>
+                </header>
+
+                <div class="tabelas-grid">
+                    <article class="tabela-card">
+                        <h3>🇧🇷 Brasileirão Série A</h3>
+                        <p>Classificação atual do campeonato brasileiro.</p>
+                        <a
+                            href="https://www.cbf.com.br/futebol-brasileiro/competicoes/campeonato-brasileiro-serie-a"
+                            target="_blank"
+                        >
+                            Ver tabela oficial →
+                        </a>
+                    </article>
+
+                    <article class="tabela-card">
+                        <h3>🇪🇸 La Liga</h3>
+                        <p>Classificação atual do campeonato espanhol.</p>
+                        <a
+                            href="https://www.laliga.com/laliga-santander/classification"
+                            target="_blank"
+                        >
+                            Ver tabela oficial →
+                        </a>
+                    </article>
+
+                    <article class="tabela-card">
+                        <h3>🇬🇧 Premier League</h3>
+                        <p>Classificação atual do campeonato inglês.</p>
+                        <a
+                            href="https://www.premierleague.com/tables"
+                            target="_blank"
+                        >
+                            Ver tabela oficial →
+                        </a>
+                    </article>
+
+                    <article class="tabela-card">
+                        <h3>🇮🇹 Serie A</h3>
+                        <p>Classificação atual do campeonato italiano.</p>
+                        <a
+                            href="https://www.legaseriea.it/en/serie-a/league-table"
+                            target="_blank"
+                        >
+                            Ver tabela oficial →
+                        </a>
+                    </article>
+
+                    <article class="tabela-card">
+                        <h3>🇩🇪 Bundesliga</h3>
+                        <p>Classificação atual do campeonato alemão.</p>
+                        <a
+                            href="https://www.bundesliga.com/en/bundesliga/table"
+                            target="_blank"
+                        >
+                            Ver tabela oficial →
+                        </a>
+                    </article>
+
+                    <article class="tabela-card">
+                        <h3>🏀 NBA</h3>
+                        <p>Conferências e classificação atual.</p>
+                        <a href="https://www.nba.com/standings" target="_blank">
+                            Ver classificação →
+                        </a>
+                    </article>
+
+                    <article class="tabela-card">
+                        <h3>🏎️ Fórmula 1</h3>
+                        <p>Classificação de pilotos e construtores.</p>
+                        <a
+                            href="https://www.formula1.com/en/results.html"
+                            target="_blank"
+                        >
+                            Ver classificação →
+                        </a>
+                    </article>
+
+                    <article class="tabela-card">
+                        <h3>❄️ Olimpíadas de Inverno</h3>
+                        <p>Quadro de medalhas oficial.</p>
+                        <a
+                            href="https://olympics.com/pt/olympic-games/winter-olympics/medals"
+                            target="_blank"
+                        >
+                            Ver medalhas →
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>Linha de Frente</h3>
+                        <p>Notícias e acontecimentos esportivos</p>
+                    </div>
+
+                    <div class="footer-info">
+                        <p>© 2026 Linha de Frente</p>
+                        <p>Desenvolvido por <strong>LT</strong></p>
+                    </div>
+
+                    <div class="footer-social">
+                        <a
+                            href="https://www.instagram.com/linhadefrentemkt?igsh=OGttcTk5NHJ4eHo4"
+                            target="_blank"
+                            aria-label="Instagram"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </main>
+        <script src="JavaScritp/main.js" defer></script>
     </body>
 </html>
